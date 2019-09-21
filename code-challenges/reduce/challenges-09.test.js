@@ -133,10 +133,8 @@ const characters = [
 
 const countNumberOfChildren = (arr) =>
   arr.reduce((acc, cur) =>
-    cur.children ? acc += countNumberOfElements(cur.children) :
-      acc, 0);
+    cur.children ? acc += countNumberOfElements(cur.children) : acc, 0);
 
-console.log(countNumberOfChildren(characters));
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -215,9 +213,8 @@ const snorlaxData = {
   weight: 4600,
 };
 
-const extractStat = (statName, arr) => {
-  // Solution code here...
-};
+const extractStat = (statName, arr) =>
+  arr.reduce((acc, cur) => cur.stat.name === statName ? cur : acc);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
@@ -229,9 +226,10 @@ Write a function named extractChildren that, given the array of characters from 
 2) Then, uses reduce to return an array of all the children's names in the filtered array
 ------------------------------------------------------------------------------------------------ */
 
-const extractChildren = (arr) => {
-  // Solution code here...
-};
+const extractChildren = (arr) =>
+  arr
+    .filter(obj => /a/i.test(obj.name))
+    .reduce((acc, cur) => cur.children ? acc.concat(cur.children) : acc, []);
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
@@ -280,13 +278,13 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   test('It should return any stats that match the input', () => {
     expect(extractStat('speed', snorlaxData.stats)).toStrictEqual({ stat: { url: 'https://pokeapi.co/api/v2/stat/6/', name: 'speed' }, effort: 5, baseStat: 30 });
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should return an array containing the names of the children', () => {
     expect(extractChildren(characters)).toStrictEqual([ 'Robb', 'Sansa', 'Arya', 'Bran', 'Rickon', 'Drogon', 'Rhaegal', 'Viserion', 'Margaery', 'Loras' ]);
     expect(extractChildren(characters).length).toStrictEqual(10);
