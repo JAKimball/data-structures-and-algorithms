@@ -115,8 +115,6 @@ const findMaleAndFemale = (data) =>
     .map(obj => obj.name)
     .reduce((acc, cur) => acc + ' and ' + cur);
 
-console.log(findMaleAndFemale(starWarsData));
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
