@@ -33,3 +33,4 @@ Write a function which takes a sorted array and a key and returns the index of t
 
 ![Optimized & Corrected Code](../../assests/whiteboard03-corrected-code.jpg "Optimized & Corrected Code")
 
+### [Code](array-binary-search.js)
