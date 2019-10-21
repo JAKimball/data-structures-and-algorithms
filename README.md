@@ -9,8 +9,9 @@ Repo for code practice and challenges
 
 * #### [Reverse an Array](code-challenges/arrayReverse/README.md)
 
+* #### [Insert Into Array](code-challenges/arrayShift/README.md)
 
-
+* #### [Binary search in a sorted 1D array](code-challenges/arrayBinarySearch/README.md)
 
 # DSA/Challenge Submission Instruction
 
