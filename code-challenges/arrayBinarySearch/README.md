@@ -1,4 +1,4 @@
-# Insert Into Array
+# Binary search in a sorted 1D array
 
 ## Challenge
 
@@ -6,7 +6,7 @@ Write a function which takes a sorted array and a key and returns the index of t
 
 ## Approach & Efficiency
 
-- initialize varialbles representing:
+- initialize variables representing:
   - low end of the array range to 0
   - high end of array range to arr.length-1
   - loop while low is less than high

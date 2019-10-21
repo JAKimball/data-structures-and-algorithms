@@ -26,7 +26,7 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   const result = [];
-  arr.forEach(n => { result.push(2 ** n); })
+  arr.forEach(n => { result.push(2 ** n); });
   return result;
 };
 
@@ -107,7 +107,7 @@ const snorlaxAbilities = {
 };
 
 const extractAbilities = (arr) => arr.map(ability => ability.ability.name);
-  
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
 
@@ -153,7 +153,7 @@ const snorlaxStats = {
 const extractStats = (arr) => arr.map(stat =>
   ({
     name: stat.stat.name,
-    total: stat.effort + stat.baseStat
+    total: stat.effort + stat.baseStat,
   }));
 
 /* ------------------------------------------------------------------------------------------------

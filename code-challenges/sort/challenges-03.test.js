@@ -238,37 +238,37 @@ describe('Testing challenge 5', () => {
   test('It should sort items by their price', () => {
     expect(sortByPrice([{
       name: 'Sweatshirt',
-      price: 45
+      price: 45,
     },
     {
       name: 'Bookmark',
-      price: 2.50
+      price: 2.50,
     },
     {
       name: 'Tote bag',
-      price: 15
-    }
+      price: 15,
+    },
     ])).toStrictEqual([{
       name: 'Bookmark',
-      price: 2.50
+      price: 2.50,
     },
     {
       name: 'Tote bag',
-      price: 15
+      price: 15,
     },
     {
       name: 'Sweatshirt',
-      price: 45
+      price: 45,
     },
     ]);
     expect(sortByPrice([{
-      price: 12
+      price: 12,
     }, {
-      price: 10
+      price: 10,
     }])).toStrictEqual([{
-      price: 10
+      price: 10,
     }, {
-      price: 12
+      price: 12,
     }]);
     expect(sortByPrice([])).toStrictEqual([]);
   });
@@ -290,14 +290,14 @@ describe('Testing challenge 7', () => {
       new Person('Wes', 'Washington', 25),
     ]);
     expect(sortPeople([{
-      lastName: 'banana'
+      lastName: 'banana',
     }, {
-      lastName: 'apple'
+      lastName: 'apple',
     }]))
       .toStrictEqual([{
-        lastName: 'apple'
+        lastName: 'apple',
       }, {
-        lastName: 'banana'
+        lastName: 'banana',
       }]);
   });
 });
@@ -320,17 +320,17 @@ describe('Testing challenge 8', () => {
     ]);
     expect(sortPeopleBetter([{
       firstName: 'andrew',
-      lastName: 'apple'
+      lastName: 'apple',
     }, {
       firstName: 'andre',
-      lastName: 'apple'
+      lastName: 'apple',
     }]))
       .toStrictEqual([{
         firstName: 'andre',
-        lastName: 'apple'
+        lastName: 'apple',
       }, {
         firstName: 'andrew',
-        lastName: 'apple'
+        lastName: 'apple',
       }]);
   });
 });

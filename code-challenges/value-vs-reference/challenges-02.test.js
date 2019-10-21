@@ -118,7 +118,7 @@ describe('Testing challenge 2', () => {
 describe('Testing challenge 3', () => {
   test('It should add a property to an object', () => {
     const a = {
-      fullName: 'Octavia Butler'
+      fullName: 'Octavia Butler',
     };
     addBirthYearProperty(a, 1947);
 
@@ -129,11 +129,11 @@ describe('Testing challenge 3', () => {
 describe('Testing challenge 4', () => {
   test('It should add a property to every object in an array', () => {
     const a = [{
-      fullName: 'Octavia Butler'
+      fullName: 'Octavia Butler',
     }, {
-      fullName: 'Ray Bradbury'
+      fullName: 'Ray Bradbury',
     }, {
-      fullName: 'Kurt Vonnegut'
+      fullName: 'Kurt Vonnegut',
     }];
     setStatusAsAuthor(a);
 

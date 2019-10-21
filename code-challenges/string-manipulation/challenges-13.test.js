@@ -208,22 +208,22 @@ describe('Testing challenge 8', () => {
     const roster = [
       ['Michelle', 'Allie', 'Brook TESTING'],
       ['Brook Riggio', 'hey look it\'s Brook', 'Jennifer'],
-      ['Nicholas', 'Sam', 'Scott', 'Vinicio']
+      ['Nicholas', 'Sam', 'Scott', 'Vinicio'],
     ];
 
     expect(unenrollBrook(roster)).toStrictEqual([
       ['Michelle', 'Allie'],
       ['Jennifer'],
-      ['Nicholas', 'Sam', 'Scott', 'Vinicio']
+      ['Nicholas', 'Sam', 'Scott', 'Vinicio'],
     ]);
     expect(unenrollBrook([
       ['Brook', 'person'],
       [],
-      ['person', 'person', 'Brook']
+      ['person', 'person', 'Brook'],
     ])).toStrictEqual([
       ['person'],
       [],
-      ['person', 'person']
+      ['person', 'person'],
     ]);
     expect(unenrollBrook([])).toStrictEqual([]);
   });
