@@ -1,4 +1,5 @@
 # data-structures-and-algorithms
+
 Repo for code practice and challenges
 
 ## Table of Contents
@@ -9,10 +10,13 @@ Repo for code practice and challenges
 
 * #### [Reverse an Array](code-challenges/arrayReverse/README.md)
 
+* #### [Insert Into Array](code-challenges/arrayShift/README.md)
 
+* #### [Binary search in a sorted 1D array](code-challenges/arrayBinarySearch/README.md)
 
+---------------
 
-# DSA/Challenge Submission Instruction
+## DSA/Challenge Submission Instruction
 
 **Create a new repository called `data-structures-and-algorithms`**
 
@@ -26,7 +30,7 @@ Repo for code practice and challenges
 * Additionally, create a folder called `docs` with a subfolder `config`
   * In the config folder, place the jsdoc.config.json file found in the 'configs' folder of your class repository
 
-**For each new data structure, create a folder**
+### **For each new data structure, create a folder**
 
 * In this folder you will create your constructor/library module
   * i.e. `data-structures-and-algorithms/linked-lists`
@@ -48,9 +52,10 @@ Repo for code practice and challenges
   * :20 composing your code and tests
   
 ### Testing
- * Write a complete set of tests for all data structures
- * Your daily code challenges should also have tests as a means of running the actual code
- * Your tests must be running green on travis.com
+
+* Write a complete set of tests for all data structures
+* Your daily code challenges should also have tests as a means of running the actual code
+* Your tests must be running green on travis.com
 
 ## To Submit Your DSA Lab or Challenge
 
@@ -66,7 +71,8 @@ Repo for code practice and challenges
     * For Code Challenges: A photograph of your whiteboard
 
 Your folder structure should look like this:
-```
+
+```text
   data-structures-and-algorithms
     |__ docs
     |
@@ -80,7 +86,3 @@ Your folder structure should look like this:
         │   └── linked-lists.test.js
         └── index.js
 ```
-
-
- 
-

@@ -204,19 +204,19 @@ describe('Testing challenge 5', () => {
 describe('Testing challenge 6', () => {
   const inventory = [{
     name: 'apples',
-    available: true
+    available: true,
   }, {
     name: 'pears',
-    available: true
+    available: true,
   }, {
     name: 'oranges',
-    available: false
+    available: false,
   }, {
     name: 'bananas',
-    available: true
+    available: true,
   }, {
     name: 'blueberries',
-    available: false
+    available: false,
   }];
 
   test('It should only add the available items to the list', () => {

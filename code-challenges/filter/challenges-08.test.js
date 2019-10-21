@@ -211,29 +211,29 @@ describe('Testing challenge 4', () => {
     expect(getBaseStatGreaterThan(snorlaxData.stats, 75)).toStrictEqual([{
       stat: {
         url: 'https://pokeapi.co/api/v2/stat/5/',
-        name: 'special-defense'
+        name: 'special-defense',
       },
       effort: 2,
-      baseStat: 110
+      baseStat: 110,
     }]);
     expect(getBaseStatGreaterThan(snorlaxData.stats, 75).length).toStrictEqual(1);
     expect(getBaseStatGreaterThan(snorlaxData.stats, 110)).toStrictEqual([]);
   });
   test('It should work for non-Snorlax data', () => {
     expect(getBaseStatGreaterThan([{
-      baseStat: 10
+      baseStat: 10,
     }, {
-      baseStat: -85
+      baseStat: -85,
     }, {
-      baseStat: 0
+      baseStat: 0,
     }, {
-      baseStat: -50
+      baseStat: -50,
     }], -60)).toStrictEqual([{
-      baseStat: 10
+      baseStat: 10,
     }, {
-      baseStat: 0
+      baseStat: 0,
     }, {
-      baseStat: -50
+      baseStat: -50,
     }]);
   });
 });
@@ -253,27 +253,27 @@ describe('Testing challenge 5', () => {
     expect(getStatName([{
       baseStat: 10,
       stat: {
-        name: 'one'
-      }
+        name: 'one',
+      },
     },
     {
       baseStat: -85,
       stat: {
-        name: 'two'
-      }
+        name: 'two',
+      },
     },
     {
       baseStat: 0,
       stat: {
-        name: 'three'
-      }
+        name: 'three',
+      },
     },
     {
       baseStat: -50,
       stat: {
-        name: 'four'
-      }
-    }
+        name: 'four',
+      },
+    },
     ], -60)).toStrictEqual(['one', 'three', 'four']);
   });
 });
@@ -283,11 +283,11 @@ describe('Testing challenge 6', () => {
     expect(getCharactersWithoutChildren(characters)).toStrictEqual([{
       name: 'Sansa',
       spouse: 'Tyrion',
-      house: 'Stark'
+      house: 'Stark',
     }, {
       name: 'Jon',
       spouse: null,
-      house: 'Snow'
+      house: 'Snow',
     }]);
     expect(getCharactersWithoutChildren(characters).length).toStrictEqual(2);
   });

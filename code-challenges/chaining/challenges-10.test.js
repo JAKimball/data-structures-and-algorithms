@@ -76,7 +76,7 @@ let starWarsData = [{
   skin_color: 'gold',
   eye_color: 'yellow',
   birth_year: '112BBY',
-  gender: 'n/a'
+  gender: 'n/a',
 },
 {
   name: 'R2-D2',
@@ -86,7 +86,7 @@ let starWarsData = [{
   skin_color: 'white, blue',
   eye_color: 'red',
   birth_year: '33BBY',
-  gender: 'n/a'
+  gender: 'n/a',
 },
 {
   name: 'Darth Vader',
@@ -96,7 +96,7 @@ let starWarsData = [{
   skin_color: 'white',
   eye_color: 'yellow',
   birth_year: '41.9BBY',
-  gender: 'male'
+  gender: 'male',
 },
 {
   name: 'Leia Organa',
@@ -106,7 +106,7 @@ let starWarsData = [{
   skin_color: 'light',
   eye_color: 'brown',
   birth_year: '19BBY',
-  gender: 'female'
+  gender: 'female',
 }];
 
 const findMaleAndFemale = (data) =>
@@ -151,7 +151,7 @@ describe('Testing challenge 1', () => {
 
 describe('Testing challenge 2', () => {
   test('It should add all the numbers in the arrays', () => {
-    const nums = [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]];
+    const nums = [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6]];
 
     expect(totalSum(nums)).toStrictEqual(66);
   });
