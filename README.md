@@ -14,6 +14,8 @@ Repo for code practice and challenges
 
 * #### [Binary search in a sorted 1D array](code-challenges/arrayBinarySearch/README.md)
 
+* #### [Linked List Insertions](code-challenges/data-structures/linkedList/README.md)
+
 ---------------
 
 ## DSA/Challenge Submission Instruction
