@@ -39,24 +39,24 @@ describe('Testing binarySearch()', () => {
     expect(binarySearch([12, 13, 14, 15, 16, 99], 99)).toEqual(5);
   });
 
-  for (let i = 4; i <= 20; i++) {
-    let size = 2 ** i;
-    let key = Math.floor(Math.random() * 10000);
+  const size = 1000000;
+  const iterations = 1000000;
+  let key = Math.floor(Math.random() * 10000);
+  const testArrWithKey = largeWithKey(size, key);
+  const testArrWithoutKey = largeWithoutKey(size, key);
+  let keyAt = 0;
 
-    test(`Test ${size} element array with key.`, () => {
-      testArr = largeWithKey(size, key);
-      let keyAt = binarySearch(testArr, key);
-      expect(testArr[keyAt]).toEqual(key);
-    });
+  test(`Test ${size} element array containing key. ${iterations} iterations.`, () => {
+    for (let i = 0; i < iterations; i++) {
+      keyAt = binarySearch(testArrWithKey, key);
+    }
+    expect(testArrWithKey[keyAt]).toEqual(key);
+  });
 
-    test(`Test ${size} element array without key.`, () => {
-      testArr = largeWithoutKey(size, key);
-      let keyAt = binarySearch(testArr, key);
-      expect(keyAt).toEqual(-1);
-    });
-  }
+  test(`Test ${size} element array not containing key. ${iterations} iterations.`, () => {
+    for (let i = 0; i < iterations; i++) {
+      keyAt = binarySearch(testArrWithoutKey, key);
+    }
+    expect(keyAt).toEqual(-1);
+  });
 });
-
-// describe('Test binarySearch on large arrays.', () => {
-//   beforeEach()
-// })
