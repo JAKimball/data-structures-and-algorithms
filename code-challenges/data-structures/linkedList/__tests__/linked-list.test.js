@@ -81,9 +81,7 @@ describe('Testing LinkedList .append, .insertBefore, and .insertAfter.', () => {
 
 });
 
-describe('Testing .kthFromEnd.', () => {
-
-  test('');
+describe('Testing .kthFromEnd(k).', () => {
 
   test('Where k is greater than the length of the linked list', () => {
     const ll = new linkedList.LinkedList();
@@ -91,7 +89,7 @@ describe('Testing .kthFromEnd.', () => {
     ll.append(2);
     ll.append(3);
     ll.append(4);
-    expect(ll.kthFromEnd(-1)).toEqual(3);
+    expect(() => ll.kthFromEnd(5)).toThrow('5 is too big for the linked list length of 4');
   });
 
   test('Where k and the length of the list are the same', () => {
@@ -100,7 +98,7 @@ describe('Testing .kthFromEnd.', () => {
     ll.append(2);
     ll.append(3);
     ll.append(4);
-    expect(ll.kthFromEnd(-1)).toEqual(3);
+    expect(() => ll.kthFromEnd(4)).toThrow('4 is too big for the linked list length of 4');
   });
 
   test('Where k is not a positive integer', () => {
@@ -109,25 +107,27 @@ describe('Testing .kthFromEnd.', () => {
     ll.append(2);
     ll.append(3);
     ll.append(4);
-    expect(ll.kthFromEnd(-1)).toEqual(3);
+    expect(() => ll.kthFromEnd(-4)).toThrow('Negative linked list node number -4.');
   });
 
   test('Where the linked list is of a size 1', () => {
     const ll = new linkedList.LinkedList();
-    ll.append(1);
-    ll.append(2);
-    ll.append(3);
-    ll.append(4);
-    expect(ll.kthFromEnd(-1)).toEqual(3);
+    ll.append('only one');
+    expect(ll.kthFromEnd(0)).toEqual('only one');
   });
 
-  test('“ Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+  test('Where the linked list has no nodes', () => {
+    const ll = new linkedList.LinkedList();
+    expect(() => ll.kthFromEnd(0)).toThrow('0 is too big for the linked list length of 0');
+  });
+
+  test('“Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
     const ll = new linkedList.LinkedList();
     ll.append(1);
     ll.append(2);
-    ll.append(3);
+    ll.append('this one');
     ll.append(4);
-    expect(ll.kthFromEnd(-1)).toEqual(3);
+    expect(ll.kthFromEnd(1)).toEqual('this one');
   });
 
 
