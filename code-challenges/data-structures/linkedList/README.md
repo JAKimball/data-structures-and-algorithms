@@ -44,6 +44,8 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 ### Whiteboard
 
+Working together on whiteboard with David Zheng.
+
 #### Problem Domain and Visual
 
 ![Problem Domain and Visual](../../../assests/ll-kth-from-end-pd-visual.jpg "Problem Domain and Visual")
@@ -63,7 +65,6 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 ### [Code](linked-list.js)
 
 # Linked List Insertions
-
 
 ## Challenge
 
@@ -115,6 +116,8 @@ Add to our LinkedList class the following methods:
 ## Solution
 
 ### Whiteboard
+
+Working together on whiteboard with David Zheng.
 
 #### append
 
