@@ -60,7 +60,10 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 ![.getNthNode() Pseudo-code](../../../assests/ll-kth-from-end-pseudo-getNthNode.jpg ".getNthNode() Pseudo-code")
 
+### [Code](linked-list.js)
+
 # Linked List Insertions
+
 
 ## Challenge
 
