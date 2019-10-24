@@ -16,6 +16,10 @@ Repo for code practice and challenges
 
 * #### [Linked List Insertions](code-challenges/data-structures/linkedList/README.md)
 
+* #### [k-th value from the end of a linked list](code-challenges/data-structures/linkedList/README.md)
+
+
+
 ---------------
 
 ## DSA/Challenge Submission Instruction

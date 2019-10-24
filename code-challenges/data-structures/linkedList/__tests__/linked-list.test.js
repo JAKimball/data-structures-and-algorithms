@@ -81,3 +81,54 @@ describe('Testing LinkedList .append, .insertBefore, and .insertAfter.', () => {
 
 });
 
+describe('Testing .kthFromEnd.', () => {
+
+  test('');
+
+  test('Where k is greater than the length of the linked list', () => {
+    const ll = new linkedList.LinkedList();
+    ll.append(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append(4);
+    expect(ll.kthFromEnd(-1)).toEqual(3);
+  });
+
+  test('Where k and the length of the list are the same', () => {
+    const ll = new linkedList.LinkedList();
+    ll.append(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append(4);
+    expect(ll.kthFromEnd(-1)).toEqual(3);
+  });
+
+  test('Where k is not a positive integer', () => {
+    const ll = new linkedList.LinkedList();
+    ll.append(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append(4);
+    expect(ll.kthFromEnd(-1)).toEqual(3);
+  });
+
+  test('Where the linked list is of a size 1', () => {
+    const ll = new linkedList.LinkedList();
+    ll.append(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append(4);
+    expect(ll.kthFromEnd(-1)).toEqual(3);
+  });
+
+  test('“ Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+    const ll = new linkedList.LinkedList();
+    ll.append(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append(4);
+    expect(ll.kthFromEnd(-1)).toEqual(3);
+  });
+
+
+});

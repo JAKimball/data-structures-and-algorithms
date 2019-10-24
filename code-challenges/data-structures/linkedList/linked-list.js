@@ -99,6 +99,63 @@ class LinkedList {
   }
 
   /**
+   * Return the current count of nodes in the linked list.
+   *
+   * @returns the current count of nodes in the linked list.
+   * @memberof LinkedList
+   */
+  getLength() {
+    let current = this.head;
+    let length = 0;
+
+    while (current) {
+      length++;
+      current = current.next;
+    }
+    return length;
+  }
+
+  /**
+   * Return the node at the nth position in the linked list.
+   *
+   * @param {*} n
+   * @returns
+   * @memberof LinkedList
+   */
+  getNthNode(n) {
+    let current = this.head;
+    let length = 0;
+
+    while (current) {
+      length++;
+      if (length === n) {
+        return current;
+      }
+      current = current.next;
+    }
+    throw `The linked list is shorter than ${n} nodes.`;
+  }
+
+  /**
+   * Given a number, k, return the value of the node that is k from the end of the linked list.
+   *
+   * @param {Number} k
+   * @returns
+   * @memberof LinkedList
+   */
+  kthFromEnd(k) {
+    if (k < 0) {
+      throw `Negative linked list node number ${k}.`;
+    }
+    let length = this.getLength();
+    if (k >= length) {
+      throw `${k} is too big for the linked list length of ${length}`;
+    }
+    let foundNode = this.getNthNode(length - k);
+    return foundNode.value;
+  }
+
+  /**
    * Returns a string representing all the values in the linked list.
    *
    * @returns string representing all the values in the linked list.
