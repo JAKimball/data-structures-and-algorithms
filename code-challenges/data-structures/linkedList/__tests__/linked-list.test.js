@@ -134,7 +134,7 @@ describe('Testing .kthFromEnd(k).', () => {
 
 describe('Testing .mergeLists(list1, list2)', () => {
 
-  test('Example 1', () => {
+  test('Example 1: list1 has 3 nodes vs. list2 with 3 nodes.', () => {
     const ll1 = new linkedList.LinkedList();
     ll1.append(1);
     ll1.append(2);
@@ -146,7 +146,7 @@ describe('Testing .mergeLists(list1, list2)', () => {
     expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,2,12,3,13');
   });
 
-  test('Example 2', () => {
+  test('Example 2: list1 has 2 nodes vs. list2 with 3 nodes.', () => {
     const ll1 = new linkedList.LinkedList();
     ll1.append(1);
     ll1.append(2);
@@ -157,7 +157,7 @@ describe('Testing .mergeLists(list1, list2)', () => {
     expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,2,12,13');
   });
 
-  test('Example 3', () => {
+  test('Example 3: list1 has 3 nodes vs. list2 with 2 nodes.', () => {
     const ll1 = new linkedList.LinkedList();
     ll1.append(1);
     ll1.append(2);
@@ -168,7 +168,7 @@ describe('Testing .mergeLists(list1, list2)', () => {
     expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,2,12,3');
   });
 
-  test('Example 4', () => {
+  test('Example 4: list1 has 3 node vs. list2 with 1 nodes.', () => {
     const ll1 = new linkedList.LinkedList();
     ll1.append(1);
     ll1.append(2);
@@ -178,16 +178,7 @@ describe('Testing .mergeLists(list1, list2)', () => {
     expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,2,3');
   });
 
-  test('Example 5', () => {
-    const ll1 = new linkedList.LinkedList();
-    ll1.append(1);
-    ll1.append(2);
-    ll1.append(3);
-    const ll2 = new linkedList.LinkedList();
-    expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,2,3');
-  });
-
-  test('Example 6', () => {
+  test('Example 5: list1 has 1 node vs. list2 with 3 nodes.', () => {
     const ll1 = new linkedList.LinkedList();
     ll1.append(1);
     const ll2 = new linkedList.LinkedList();
@@ -197,7 +188,16 @@ describe('Testing .mergeLists(list1, list2)', () => {
     expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,12,13');
   });
 
-  test('Example 6', () => {
+  test('Example 6: list 2 has no nodes.', () => {
+    const ll1 = new linkedList.LinkedList();
+    ll1.append(1);
+    ll1.append(2);
+    ll1.append(3);
+    const ll2 = new linkedList.LinkedList();
+    expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,2,3');
+  });
+
+  test('Example 7: list1 has no nodes.', () => {
     const ll1 = new linkedList.LinkedList();
     const ll2 = new linkedList.LinkedList();
     ll2.append(11);
