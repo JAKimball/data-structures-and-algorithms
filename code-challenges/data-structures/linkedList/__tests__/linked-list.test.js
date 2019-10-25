@@ -130,5 +130,79 @@ describe('Testing .kthFromEnd(k).', () => {
     expect(ll.kthFromEnd(1)).toEqual('this one');
   });
 
+});
 
+describe('Testing .mergeLists(list1, list2)', () => {
+
+  test('Example 1', () => {
+    const ll1 = new linkedList.LinkedList();
+    ll1.append(1);
+    ll1.append(2);
+    ll1.append(3);
+    const ll2 = new linkedList.LinkedList();
+    ll2.append(11);
+    ll2.append(12);
+    ll2.append(13);
+    expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,2,12,3,13');
+  });
+
+  test('Example 2', () => {
+    const ll1 = new linkedList.LinkedList();
+    ll1.append(1);
+    ll1.append(2);
+    const ll2 = new linkedList.LinkedList();
+    ll2.append(11);
+    ll2.append(12);
+    ll2.append(13);
+    expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,2,12,13');
+  });
+
+  test('Example 3', () => {
+    const ll1 = new linkedList.LinkedList();
+    ll1.append(1);
+    ll1.append(2);
+    ll1.append(3);
+    const ll2 = new linkedList.LinkedList();
+    ll2.append(11);
+    ll2.append(12);
+    expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,2,12,3');
+  });
+
+  test('Example 4', () => {
+    const ll1 = new linkedList.LinkedList();
+    ll1.append(1);
+    ll1.append(2);
+    ll1.append(3);
+    const ll2 = new linkedList.LinkedList();
+    ll2.append(11);
+    expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,2,3');
+  });
+
+  test('Example 5', () => {
+    const ll1 = new linkedList.LinkedList();
+    ll1.append(1);
+    ll1.append(2);
+    ll1.append(3);
+    const ll2 = new linkedList.LinkedList();
+    expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,2,3');
+  });
+
+  test('Example 6', () => {
+    const ll1 = new linkedList.LinkedList();
+    ll1.append(1);
+    const ll2 = new linkedList.LinkedList();
+    ll2.append(11);
+    ll2.append(12);
+    ll2.append(13);
+    expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,12,13');
+  });
+
+  test('Example 6', () => {
+    const ll1 = new linkedList.LinkedList();
+    const ll2 = new linkedList.LinkedList();
+    ll2.append(11);
+    ll2.append(12);
+    ll2.append(13);
+    expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('11,12,13');
+  });
 });
