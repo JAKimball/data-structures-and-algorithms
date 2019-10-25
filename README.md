@@ -18,7 +18,7 @@ Repo for code practice and challenges
 
 * #### [k-th value from the end of a linked list](code-challenges/data-structures/linkedList/README.md#k-th-value-from-the-end-of-a-linked-list)
 
-* #### [k-th value from the end of a linked list](code-challenges/data-structures/linkedList/README.md#k-th-value-from-the-end-of-a-linked-list)
+* #### [Merge two linked lists](code-challenges/data-structures/linkedList/README.md#merge-two-linked-lists)
 
 ---------------
 

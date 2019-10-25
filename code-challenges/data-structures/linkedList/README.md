@@ -1,4 +1,4 @@
-# k-th value from the end of a linked list
+# Merge two linked lists
 
 ## Challenge
 
@@ -13,7 +13,7 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
     - set up for the loop and handle the edge condition of an empty list1.
     - in a loop while alt is not null
       - swap alt and current.next pointers
-      - advace current to current.next
+      - advance current to current.next
     - return list1;
 
 ### Whiteboard
