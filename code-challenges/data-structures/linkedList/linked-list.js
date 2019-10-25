@@ -173,4 +173,31 @@ class LinkedList {
 
 }
 
-module.exports = { Node, LinkedList };
+const mergeLists = (list1, list2) => {
+  let current = list1.head;
+  let alt = list2.head;
+  let temp = {};
+
+  if (!current) {
+    list1.head = list2.head;
+  } else {
+    while (alt) {
+
+      // exchange alt with current.next
+      temp = current.next;
+      current.next = alt;
+      alt = temp;
+
+      // advance
+      current = current.next;
+    }
+  }
+
+  return list1;
+};
+
+module.exports = {
+  Node,
+  LinkedList,
+  mergeLists,
+};

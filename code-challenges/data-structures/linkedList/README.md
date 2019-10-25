@@ -2,6 +2,41 @@
 
 ## Challenge
 
+Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1).
+
+## Solution
+
+## Approach & Efficiency
+
+- General approach
+  - using a current pointer and an alt pointer
+    - set up for the loop and handle the edge condition of an empty list1.
+    - in a loop while alt is not null
+      - swap alt and current.next pointers
+      - advace current to current.next
+    - return list1;
+
+### Whiteboard
+
+Working together on whiteboard with Derrik Puetz.
+
+#### Problem Domain and Visual
+![Problem Domain and Visual](../../../assests/ll-merge-whiteboard-full.jpg "Problem Domain and Visual")
+
+#### Optimization
+
+![Optimization](../../../assests/ll-merge-optimization-space.jpg "Optimization")
+
+
+### [Code](linked-list.js)
+
+
+--------------------
+
+# k-th value from the end of a linked list
+
+## Challenge
+
 Write a method for the Linked List class which takes a number, k, as a parameter, return the node’s value that is k from the end of the linked list.
 
 ## Solution
@@ -44,6 +79,8 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 ### Whiteboard
 
+Working together on whiteboard with David Zheng.
+
 #### Problem Domain and Visual
 
 ![Problem Domain and Visual](../../../assests/ll-kth-from-end-pd-visual.jpg "Problem Domain and Visual")
@@ -63,7 +100,6 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 ### [Code](linked-list.js)
 
 # Linked List Insertions
-
 
 ## Challenge
 
@@ -115,6 +151,8 @@ Add to our LinkedList class the following methods:
 ## Solution
 
 ### Whiteboard
+
+Working together on whiteboard with David Zheng.
 
 #### append
 
