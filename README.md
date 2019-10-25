@@ -18,6 +18,8 @@ Repo for code practice and challenges
 
 * #### [k-th value from the end of a linked list](code-challenges/data-structures/linkedList/README.md#k-th-value-from-the-end-of-a-linked-list)
 
+* #### [k-th value from the end of a linked list](code-challenges/data-structures/linkedList/README.md#k-th-value-from-the-end-of-a-linked-list)
+
 ---------------
 
 ## DSA/Challenge Submission Instruction
