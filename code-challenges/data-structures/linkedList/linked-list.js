@@ -1,7 +1,8 @@
 'use strict';
 
 /**
- * The Node class.  Instances of Node make up the actual linked list of the LinkedList class.
+ * The Node class.  Instances of Node make up the actual
+ * linked list of the LinkedList class.
  *
  * @class Node
  */
@@ -51,7 +52,8 @@ class LinkedList {
   }
 
   /**
-   * Adds a new node with the given newValue immediately before the first value node.
+   * Adds a new node with the given newValue immediately
+   * before the first value node.
    *
    * @param {*} value Value to find in the linked list.
    * @param {*} newVal Value of the new node
@@ -78,7 +80,8 @@ class LinkedList {
   }
 
   /**
-   * Adds a new node with the given value immediately after the first value node.
+   * Adds a new node with the given value immediately
+   * after the first value node.
    *
    * @param {*} value Value to find in the linked list.
    * @param {*} newVal Value of the new node
@@ -118,7 +121,7 @@ class LinkedList {
   /**
    * Return the node at the nth position in the linked list.
    *
-   * @param {*} n
+   * @param {Number} n
    * @returns
    * @memberof LinkedList
    */
@@ -173,26 +176,36 @@ class LinkedList {
 
 }
 
+/**
+ * Takes two linked lists as arguments and Zips the two linked lists together
+ * into one so that the nodes alternate between the two lists and
+ * return a reference to the head of the zipped list which will be the list passed in
+ * as list1.  This function modifies the node links in-place without making node copies.
+ *
+ * @param {*} list1
+ * @param {*} list2
+ * @returns list1 zipped with list2
+ */
 const mergeLists = (list1, list2) => {
   let current = list1.head;
   let alt = list2.head;
-  let temp = {};
 
   if (!current) {
     list1.head = list2.head;
   } else {
+
     while (alt) {
 
       // exchange alt with current.next
-      temp = current.next;
+      let temp = current.next;
       current.next = alt;
       alt = temp;
 
       // advance
       current = current.next;
     }
-  }
 
+  }
   return list1;
 };
 

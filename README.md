@@ -1,4 +1,4 @@
-# data-structures-and-algorithms
+# data-structures-and-algorithms [![Build Status](https://travis-ci.com/JAKimball/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/)
 
 Repo for code practice and challenges
 

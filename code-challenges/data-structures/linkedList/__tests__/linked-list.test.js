@@ -78,7 +78,6 @@ describe('Testing LinkedList .append, .insertBefore, and .insertAfter.', () => {
     ll.append(4);
     expect(() => ll.insertAfter(99, 'new-node')).toThrow('Value 99 not found in linked list.');
   });
-
 });
 
 describe('Testing .kthFromEnd(k).', () => {
@@ -188,7 +187,7 @@ describe('Testing .mergeLists(list1, list2)', () => {
     expect(linkedList.mergeLists(ll1, ll2).toString()).toEqual('1,11,12,13');
   });
 
-  test('Example 6: list 2 has no nodes.', () => {
+  test('Example 6: list2 has no nodes.', () => {
     const ll1 = new linkedList.LinkedList();
     ll1.append(1);
     ll1.append(2);

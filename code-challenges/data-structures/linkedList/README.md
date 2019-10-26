@@ -8,28 +8,27 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 
 ## Approach & Efficiency
 
-- General approach
-  - using a current pointer and an alt pointer
-    - set up for the loop and handle the edge condition of an empty list1.
-    - in a loop while alt is not null
-      - swap alt and current.next pointers
-      - advance current to current.next
-    - return list1;
+* General approach
+  * using a current pointer and an alt pointer
+    * set up for the loop and handle the edge condition of an empty list1.
+    * in a loop while alt is not null
+      * swap alt and current.next pointers
+      * advance current to current.next
+    * return list1;
 
 ### Whiteboard
 
 Working together on whiteboard with Derrik Puetz.
 
 #### Problem Domain and Visual
-![Problem Domain and Visual](../../../assests/ll-merge-whiteboard-full.jpg "Problem Domain and Visual")
+
+![Problem Domain and Visual](../../../assets/ll-merge-whiteboard-full.jpg "Problem Domain and Visual")
 
 #### Optimization
 
-![Optimization](../../../assests/ll-merge-optimization-space.jpg "Optimization")
-
+![Optimization](../../../assets/ll-merge-optimization-space.jpg "Optimization")
 
 ### [Code](linked-list.js)
-
 
 --------------------
 
@@ -83,19 +82,19 @@ Working together on whiteboard with David Zheng.
 
 #### Problem Domain and Visual
 
-![Problem Domain and Visual](../../../assests/ll-kth-from-end-pd-visual.jpg "Problem Domain and Visual")
+![Problem Domain and Visual](../../../assets/ll-kth-from-end-pd-visual.jpg "Problem Domain and Visual")
 
 #### High Level Pseudo-code
 
-![High Level Pseudo-code](../../../assests/ll-kth-from-end-high-level-pseudo.jpg "High Level Pseudo-code")
+![High Level Pseudo-code](../../../assets/ll-kth-from-end-high-level-pseudo.jpg "High Level Pseudo-code")
 
 #### .getLength() Pseudo-code
 
-![.getLength() Pseudo-code](../../../assests/ll-kth-from-end-pseudo-getLength.jpg ".getLength() Pseudo-code")
+![.getLength() Pseudo-code](../../../assets/ll-kth-from-end-pseudo-getLength.jpg ".getLength() Pseudo-code")
 
 #### .getNthNode() Pseudo-code
 
-![.getNthNode() Pseudo-code](../../../assests/ll-kth-from-end-pseudo-getNthNode.jpg ".getNthNode() Pseudo-code")
+![.getNthNode() Pseudo-code](../../../assets/ll-kth-from-end-pseudo-getNthNode.jpg ".getNthNode() Pseudo-code")
 
 ### [Code](linked-list.js)
 
@@ -113,40 +112,40 @@ Add to our LinkedList class the following methods:
 
 ## Approach & Efficiency
 
-1. .append(value)
+### .append(value)
 
-    * Create the new instance of Node with the given value and assign to the variable newNode a reference to it.
-    * If head is null
-      * then assign newNode to head and return
-      * else
-        * set current to head
-        * while current.next is not null
-          * set current to current.next
-        * set current.next to newNode and return
-
-2. .insertBefore(value, newVal)
-
-    * set current to linkedList.head
-    * loop while current is not null and current.value is not equal to value
-      * set previous to current
+* Create the new instance of Node with the given value and assign to the variable newNode a reference to it.
+* If head is null
+  * then assign newNode to head and return
+  * else
+    * set current to head
+    * while current.next is not null
       * set current to current.next
-    * if current is null then return an exception
-    * Create a new instance of Node with the given value and assign to the temporary variable newNode a reference to it.
-    * set newNode.next to current
-    * if current references the same node as linkedList.head
-      * set linkedList.head to newNode
-    * else
-      * set previous.next to newNode
+    * set current.next to newNode and return
 
-3. .insertAfter(value, newVal)
+### .insertBefore(value, newVal)
 
-    * set current to linkedList.head
-    * loop while current is not null and current.value is not equal to value
-      * set current to current.next
-    * if current is null the return an exception
-    * Create a new instance of Node with the given value and assign to the temporary variable newNode a reference to it.
-    * set newNode.next to current.next
-    * set current.next to newNode
+* set current to linkedList.head
+* loop while current is not null and current.value is not equal to value
+  * set previous to current
+  * set current to current.next
+* if current is null then return an exception
+* Create a new instance of Node with the given value and assign to the temporary variable newNode a reference to it.
+* set newNode.next to current
+* if current references the same node as linkedList.head
+  * set linkedList.head to newNode
+* else
+  * set previous.next to newNode
+
+### .insertAfter(value, newVal)
+
+* set current to linkedList.head
+* loop while current is not null and current.value is not equal to value
+  * set current to current.next
+* if current is null the return an exception
+* Create a new instance of Node with the given value and assign to the temporary variable newNode a reference to it.
+* set newNode.next to current.next
+* set current.next to newNode
 
 ## Solution
 
@@ -156,14 +155,14 @@ Working together on whiteboard with David Zheng.
 
 #### append
 
-![append](../../../assests/ll-insertions-append.jpg "append")
+![append](../../../assets/ll-insertions-append.jpg "append")
 
 #### insertBefore
 
-![insertBefore](../../../assests/ll-insertions-insertBefore.jpg "insertBefore")
+![insertBefore](../../../assets/ll-insertions-insertBefore.jpg "insertBefore")
 
 #### insertAfter
 
-![insertAfter](../../../assests/ll-insertions-insertAfter.jpg "insertAfter")
+![insertAfter](../../../assets/ll-insertions-insertAfter.jpg "insertAfter")
 
 ### [Code](linked-list.js)
