@@ -17,4 +17,4 @@ Write a function that takes an array and a value to be included in a returned ar
 
 ## Solution
 
-![Whiteboard](../../assests/whiteboard02.png "Whiteboard")
+![Whiteboard](../../assets/whiteboard02.png "Whiteboard")

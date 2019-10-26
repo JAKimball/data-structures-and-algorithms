@@ -23,8 +23,6 @@ const largeWithoutKey = (size, key, max = 10000) => {
   return result.sort((a, b) => (a - b));
 };
 
-let testArr = [];
-
 describe('Testing binarySearch()', () => {
   test('Should output -1 if the value is not found in the array', () => {
     expect(binarySearch([2, 4, 6, 8], 5)).toEqual(-1);

@@ -112,7 +112,7 @@ Add to our LinkedList class the following methods:
 
 ## Approach & Efficiency
 
-1. .append(value)
+### .append(value)
 
 * Create the new instance of Node with the given value and assign to the variable newNode a reference to it.
 * If head is null
@@ -123,29 +123,29 @@ Add to our LinkedList class the following methods:
       * set current to current.next
     * set current.next to newNode and return
 
-2. .insertBefore(value, newVal)
+### .insertBefore(value, newVal)
 
-    * set current to linkedList.head
-    * loop while current is not null and current.value is not equal to value
-      * set previous to current
-      * set current to current.next
-    * if current is null then return an exception
-    * Create a new instance of Node with the given value and assign to the temporary variable newNode a reference to it.
-    * set newNode.next to current
-    * if current references the same node as linkedList.head
-      * set linkedList.head to newNode
-    * else
-      * set previous.next to newNode
+* set current to linkedList.head
+* loop while current is not null and current.value is not equal to value
+  * set previous to current
+  * set current to current.next
+* if current is null then return an exception
+* Create a new instance of Node with the given value and assign to the temporary variable newNode a reference to it.
+* set newNode.next to current
+* if current references the same node as linkedList.head
+  * set linkedList.head to newNode
+* else
+  * set previous.next to newNode
 
-3. .insertAfter(value, newVal)
+### .insertAfter(value, newVal)
 
-    * set current to linkedList.head
-    * loop while current is not null and current.value is not equal to value
-      * set current to current.next
-    * if current is null the return an exception
-    * Create a new instance of Node with the given value and assign to the temporary variable newNode a reference to it.
-    * set newNode.next to current.next
-    * set current.next to newNode
+* set current to linkedList.head
+* loop while current is not null and current.value is not equal to value
+  * set current to current.next
+* if current is null the return an exception
+* Create a new instance of Node with the given value and assign to the temporary variable newNode a reference to it.
+* set newNode.next to current.next
+* set current.next to newNode
 
 ## Solution
 
