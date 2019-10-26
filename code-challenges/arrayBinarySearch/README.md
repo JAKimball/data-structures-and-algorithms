@@ -23,14 +23,14 @@ Write a function which takes a sorted array and a key and returns the index of t
 
 ### Initial Whiteboard
 
-![Whiteboard](../../assests/whiteboard03.png "Whiteboard")
+![Whiteboard](../../assets/whiteboard03.png "Whiteboard")
 
 ### Optimized Algorithm
 
-![Optimized Algorithm](../../assests/whiteboard03-optimized-alg.jpg "Optimized Algorithm")
+![Optimized Algorithm](../../assets/whiteboard03-optimized-alg.jpg "Optimized Algorithm")
 
 ### Optimized & Corrected Code
 
-![Optimized & Corrected Code](../../assests/whiteboard03-corrected-code.jpg "Optimized & Corrected Code")
+![Optimized & Corrected Code](../../assets/whiteboard03-corrected-code.jpg "Optimized & Corrected Code")
 
 ### [Code](array-binary-search.js)
