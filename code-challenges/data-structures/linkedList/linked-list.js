@@ -182,8 +182,8 @@ class LinkedList {
  * return a reference to the head of the zipped list which will be the list passed in
  * as list1.  This function modifies the node links in-place without making node copies.
  *
- * @param {*} list1
- * @param {*} list2
+ * @param {LinkedList} list1
+ * @param {LinkedList} list2
  * @returns list1 zipped with list2
  */
 const mergeLists = (list1, list2) => {
