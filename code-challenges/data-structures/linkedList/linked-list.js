@@ -126,6 +126,10 @@ class LinkedList {
    * @memberof LinkedList
    */
   getNthNode(n) {
+    if (n < 1) {
+      throw `Method getNthNode(n) called with n less than 1.`;
+    }
+
     let current = this.head;
     let length = 0;
 
@@ -140,7 +144,8 @@ class LinkedList {
   }
 
   /**
-   * Given a number, k, return the value of the node that is k from the end of the linked list.
+   * Given a number, k, return the value of the node that is k from the
+   * end of the linked list.
    *
    * @param {Number} k
    * @returns
@@ -148,7 +153,7 @@ class LinkedList {
    */
   kthFromEnd(k) {
     if (k < 0) {
-      throw `Negative linked list node number ${k}.`;
+      throw `Method kthFromEnd called with negative number ${k}.`;
     }
     let length = this.getLength();
     if (k >= length) {
@@ -177,13 +182,14 @@ class LinkedList {
 }
 
 /**
- * Takes two linked lists as arguments and Zips the two linked lists together
- * into one so that the nodes alternate between the two lists and
- * return a reference to the head of the zipped list which will be the list passed in
- * as list1.  This function modifies the node links in-place without making node copies.
+ * Takes two linked lists as arguments and Zips the two linked lists
+ * together into one so that the nodes alternate between the two
+ * lists and return a reference to the head of the zipped list which
+ * will be the list passed in as list1.  This function modifies the
+ * node links in-place without making node copies.
  *
- * @param {*} list1
- * @param {*} list2
+ * @param {LinkedList} list1
+ * @param {LinkedList} list2
  * @returns list1 zipped with list2
  */
 const mergeLists = (list1, list2) => {
