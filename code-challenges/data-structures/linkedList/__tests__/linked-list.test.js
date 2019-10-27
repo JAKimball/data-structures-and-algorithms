@@ -126,7 +126,7 @@ describe('Testing .kthFromEnd(k).', () => {
     ll.append(2);
     ll.append('this one');
     ll.append(4);
-    expect(ll.kthFromEnd(1)).toEqual('thisxone');
+    expect(ll.kthFromEnd(1)).toEqual('this one');
   });
 
 });
