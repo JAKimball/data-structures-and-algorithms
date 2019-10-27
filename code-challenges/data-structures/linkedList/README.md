@@ -6,7 +6,7 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 
 ## Solution
 
-## Approach & Efficiency
+### Approach & Efficiency
 
 * General approach
   * using a current pointer and an alt pointer
@@ -40,7 +40,7 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 ## Solution
 
-## Approach & Efficiency
+### Approach & Efficiency
 
 ### Overall Approach
 
@@ -110,7 +110,9 @@ Add to our LinkedList class the following methods:
 
 3. .insertAfter(value, newVal) - Adds a new node with the given value immediately after the first value node.
 
-## Approach & Efficiency
+## Solution
+
+### Approach & Efficiency
 
 ### .append(value)
 
@@ -146,8 +148,6 @@ Add to our LinkedList class the following methods:
 * Create a new instance of Node with the given value and assign to the temporary variable newNode a reference to it.
 * set newNode.next to current.next
 * set current.next to newNode
-
-## Solution
 
 ### Whiteboard
 
