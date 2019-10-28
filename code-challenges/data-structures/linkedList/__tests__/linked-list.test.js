@@ -2,6 +2,64 @@
 
 const linkedList = require('../linked-list');
 
+describe('Testing LinkedList constructor and insert, includes, and toString methods.', () => {
+  test('Can successfully instantiate an empty linked list', () => {
+    const ll = new linkedList.LinkedList();
+    expect(ll.head).toEqual(null);
+  });
+
+  test('Can properly insert into the linked list', () => {
+    const ll = new linkedList.LinkedList();
+    ll.insert('1');
+    ll.insert('2');
+    expect(ll.toString()).toEqual('2,1');
+  });
+
+  test('The head property will properly point to the first node in the linked list', () => {
+    const ll = new linkedList.LinkedList();
+    ll.insert(1);
+    ll.insert(2);
+    expect(ll.head.value).toEqual(2);
+  });
+
+  test('Can properly insert multiple nodes into the linked list', () => {
+    const ll = new linkedList.LinkedList();
+    ll.insert(4);
+    ll.insert(3);
+    ll.insert(2);
+    ll.insert(1);
+    expect(ll.toString()).toEqual('1,2,3,4');
+  });
+
+  test('Will return true when finding a value within the linked list that exists', () => {
+    const ll = new linkedList.LinkedList();
+    ll.insert(4);
+    ll.insert(3);
+    ll.insert(2);
+    ll.insert(1);
+    expect(ll.includes(3)).toEqual(true);
+  });
+
+  test('Will return false when searching for a value in the linked list that does not exist', () => {
+    const ll = new linkedList.LinkedList();
+    ll.insert(4);
+    ll.insert(3);
+    ll.insert(2);
+    ll.insert(1);
+    expect(ll.includes(99)).toEqual(false);
+  });
+
+  test('Can properly return a collection of all the values that exist in the linked list', () => {
+    const ll = new linkedList.LinkedList();
+    ll.insert(4);
+    ll.insert(3);
+    ll.insert(2);
+    ll.insert(1);
+    expect(ll.toString()).toEqual('1,2,3,4');
+  });
+
+});
+
 describe('Testing LinkedList .append, .insertBefore, and .insertAfter.', () => {
   test('Can successfully add a node to the end of the linked list.', () => {
     const ll = new linkedList.LinkedList();

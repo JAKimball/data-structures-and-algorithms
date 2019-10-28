@@ -1,3 +1,84 @@
+
+# Singly Linked List
+
+An implementation of a class for creating and working with a singly linked list.
+
+## Challenge
+
+* Implement a Node class that stores a node value and a pointer to the next Node.
+* Implement a LinkList class with the insert, includes, and toString methods described below.
+
+## Approach & Efficiency
+
+### insert(value)
+
+* Create a new instance of Node with the given value and assign it to the nodeNode variable.
+* Assign to newNode.next the reference in this.head.
+* Assign to this.head a reference to the new instance.
+
+This method has an O(1) time performance.
+
+### includes(value)
+
+* Set the local variable `current` to the Node reference in `this.head`.
+* While `current` is not null, loop
+  * If `current.value` is equal to the given value, return with `true`.
+  * Set `current` to `current.next`
+* return `false`.
+
+This method has an O(n) time, and O(1) space performance.
+
+### toString()
+
+* Set the local variable `current` to the Node reference in `this.head`.
+* Declare an empty array to receive Node values
+* While `current` is not null, loop
+  * push onto the array `current.value`
+  * Set `current` to `current.next`
+* Concatenate the array with the Array.prototype.join(',') method.
+
+This method has an O(n) time, and O(n) space performance.
+
+## API
+
+### append(value)
+
+Adds a new node with the given value to the end of the list.
+
+### getLength()
+
+Return the current count of nodes in the linked list.
+
+### getNthNode(n)
+
+Return the Node at the nth position in the linked list.
+
+### includes(value)
+
+Returns a boolean indicating if the given value is equal to any Node's value in the list.
+
+### insert(value)
+
+Takes any value as an argument and adds a new node with that value to the head of the list.
+
+### insertAfter(value, newVal)
+
+Adds a new node with the given value immediately after the first value node.
+
+### insertBefore(value, newVal)
+
+Adds a new node with the given newValue immediately before the first value node.
+
+### kthFromEnd(k)
+
+Given a number, k, return the value of the node that is k from the end of the linked list.
+
+### toString()
+
+Returns a string representing all the values in the linked list.
+
+## [Code](linked-list.js)
+
 # Merge two linked lists
 
 ## Challenge
