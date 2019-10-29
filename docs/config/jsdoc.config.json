@@ -1,6 +1,8 @@
 {
   "source": {
-    "include": ["./code-challenges/data-structures/linkedList"]
+    "include": ["./code-challenges/data-structures/linkedList",
+      "./code-challenges/data-structures/stacksAndQueues"
+    ]
   },
   "opts": {
     "destination": "./docs/",
