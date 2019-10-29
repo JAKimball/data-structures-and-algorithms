@@ -1,8 +1,22 @@
 # Stacks and Queues
-<!-- Short summary or background information -->
+
+This is a JavaScript implementation of stack and queue data structures.
 
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
+
+This implements the following objects and methods:
+
+### Node
+
+Used internally by the Stack and Queue objects to form linked lists to implement the stack and queue behaviors.
+
+### Stack
+
+Call that implements a stack.  It has the following methods.
+
+* `push(value)` - Takes any value as an argument and adds a new node with that value to the top of the stack.
+* `pop()` - Removes the node from the top of the stack, and returns the node’ s value.
 
 # Implement a Queue using two Stacks
 
@@ -42,4 +56,14 @@ all values from one internal stack to the other whenever a switch is made from e
 
 ### Problem Domain
 
-![Problem Domain and Visual](../../../assets/ll-merge-whiteboard-full.jpg "Problem Domain and Visual")
+![Problem Domain and Examples](../../../assets/queue-with-stacks-pd-io.jpg "Problem Domain and Examples")
+
+### Approach, Visual, and Pseudo-code
+
+![Approach and Pseudo-code](../../../assets/queue-with-stacks-approach-pseudo-visual.jpg "Approach and Pseudo-code")
+
+### Whiteboard Code
+
+![Whiteboard Code](../../../assets/queue-with-stacks-code.jpg "Approach and Pseudo-code")
+
+## [Code](queueWithStacks/queue-with-stacks.js)
