@@ -14,6 +14,8 @@ Repo for code practice and challenges
 
 * #### [Binary search in a sorted 1D array](code-challenges/arrayBinarySearch/README.md)
 
+### Linked Lists
+
 * #### [Singly Linked List](code-challenges/data-structures/linkedList/README.md#singly-linked-list)
 
 * #### [Linked List Insertions](code-challenges/data-structures/linkedList/README.md#linked-list-insertions)
@@ -21,6 +23,10 @@ Repo for code practice and challenges
 * #### [k-th value from the end of a linked list](code-challenges/data-structures/linkedList/README.md#k-th-value-from-the-end-of-a-linked-list)
 
 * #### [Merge two linked lists](code-challenges/data-structures/linkedList/README.md#merge-two-linked-lists)
+
+### Stacks and Queues
+
+#### [Implement a Queue using two Stacks](code-challenges/data-structures/stacksAndQueues)
 
 ---------------
 
