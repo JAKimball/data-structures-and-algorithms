@@ -8,7 +8,7 @@
  */
 class Node {
   /**
-   *Creates an instance of Node.
+   * Creates an instance of Node.
    * @param {*} value The value of the node.
    * @memberof Node
    */

@@ -26,7 +26,7 @@ Repo for code practice and challenges
 
 ### Stacks and Queues
 
-#### [Implement a Queue using two Stacks](code-challenges/data-structures/stacksAndQueues)
+* #### [Implement a Queue using two Stacks](code-challenges/data-structures/stacksAndQueues/README.md#implement-a-queue-using-two-stacks)
 
 ---------------
 
