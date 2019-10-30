@@ -28,6 +28,8 @@ Repo for code practice and challenges
 
 * #### [Implement a Queue using two Stacks](code-challenges/data-structures/stacksAndQueues/README.md#implement-a-queue-using-two-stacks)
 
+* #### [First-in, First-out Animal Shelter](code-challenges/fifoAnimalShelter/README.md)
+
 ---------------
 
 ## DSA/Challenge Submission Instruction
