@@ -67,14 +67,36 @@ class AnimalShelter {
   }
 }
 
+/**
+ * The Animal Class
+ *
+ * @class Animal
+ */
 class Animal {
+  /**
+   *Creates an instance of Animal.
+   * @param {*} name
+   * @memberof Animal
+   */
   constructor(name) {
     this.name = name;
   }
 }
 
+/**
+ * The Cat Class
+ *
+ * @class Cat
+ * @extends {Animal}
+ */
 class Cat extends Animal {}
 
+/**
+ * The Dog Class
+ *
+ * @class Dog
+ * @extends {Animal}
+ */
 class Dog extends Animal {}
 
 module.exports = { AnimalShelter, Cat, Dog };
