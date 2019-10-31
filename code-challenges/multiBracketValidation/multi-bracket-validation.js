@@ -31,8 +31,8 @@ const multiBracketValidation = (input) => {
       }
     }
   }
-  // If we get this far, the input string is balanced if, and only if,
-  // the stack is empty!
+  // If we get this far, the input string is balanced
+  // if, and only if, the stack is empty!
   return stack.isEmpty();
 };
 

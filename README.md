@@ -30,6 +30,8 @@ Repo for code practice and challenges
 
 * #### [First-in, First-out Animal Shelter](code-challenges/fifoAnimalShelter/README.md)
 
+* #### [Multi-bracket Validation](code-challenges/multiBracketValidation/README.md)
+
 ---------------
 
 ## DSA/Challenge Submission Instruction
