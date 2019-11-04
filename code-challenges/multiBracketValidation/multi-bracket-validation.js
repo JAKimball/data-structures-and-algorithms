@@ -10,13 +10,12 @@ const { Stack } = require('../data-structures/stacksAndQueues/stacks-and-queues'
  * @returns True if and only if the brackets in the string are balanced
  */
 const multiBracketValidation = (input) => {
-  const OPENERS = new Set(['(', '[', '{']);
+  const OPENERS = '([{';
   const CLOSER_MATCHES = { ')': '(', ']': '[', '}': '{' };
   const stack = new Stack();
 
-  for (let i = 0; i < input.length; i++) {
-    let char = input[i];
-    if (OPENERS.has(char)) {
+  for (let char of input) {
+    if (OPENERS.includes(char)) {
       stack.push(char);
     } else {
 
