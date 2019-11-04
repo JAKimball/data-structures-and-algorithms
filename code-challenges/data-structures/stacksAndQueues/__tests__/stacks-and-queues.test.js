@@ -59,7 +59,7 @@ describe('Testing Stacks and Queues', () => {
     expect(stack.isEmpty()).toEqual(true);
   });
 
-  test('Throws exception when attempting to dequeue an empty queue', () => {
+  test('Throws exception when attempting to pop from an empty stack', () => {
     const stack = new Stack();
     expect(() => stack.pop()).toThrow('Attempt to pop from empty stack.');
   });

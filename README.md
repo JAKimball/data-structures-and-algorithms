@@ -26,7 +26,9 @@ Repo for code practice and challenges
 
 ### Stacks and Queues
 
-* #### [Implement a Queue using two Stacks](code-challenges/data-structures/stacksAndQueues/README.md#implement-a-queue-using-two-stacks)
+* #### [Implementation: Stacks and Queues](code-challenges/data-structures/stacksAndQueues/README.md)
+
+* #### [Implement a Queue using two Stacks](code-challenges/data-structures/stacksAndQueues/queueWithStacks/README.md)
 
 * #### [First-in, First-out Animal Shelter](code-challenges/fifoAnimalShelter/README.md)
 
