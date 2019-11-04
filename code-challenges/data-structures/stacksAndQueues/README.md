@@ -30,6 +30,3 @@ Class that implements a queue.  It has the following methods.
 * `isEmpty()` - Returns a boolean indicating if the queue is empty.
 
 ## [Code](stacks-and-queues.js)
-
------------
-
