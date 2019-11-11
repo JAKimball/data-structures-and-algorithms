@@ -36,6 +36,8 @@ Repo for code practice and challenges
 
 ### Trees
 
+* #### [Implementation: Trees](code-challenges/data-structures/tree/README.md)
+
 * #### [Find Maximum Value in a Binary Tree](code-challenges/data-structures/tree/README.md#Find-maximum-value-in-a-binary-tree)
 
 ---------------

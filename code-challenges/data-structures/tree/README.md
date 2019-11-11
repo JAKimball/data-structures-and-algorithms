@@ -15,11 +15,11 @@ Used internally by the BinaryTree and BinarySearchTree objects.
 
 Class that implements a BinaryTree.  It has the following methods.
 
-* `preOrder()` - .
-* `inOrder()` - .
-* `postOrder()` - .
+* `preOrder()` - returns an array of the values, ordered in pre-order (root, left, right).
+* `inOrder()` - returns an array of the values, ordered in-order (left, root, right).
+* `postOrder()` - returns an array of the values, ordered in post-order (left, right, root).
 * `findMaximumValue()` - Instance method that returns the maximum value in the tree assuming.  Assumes the values stored are numeric.
-* `()` - .
+* `breadthFirst()` - traverse the input tree using a Breadth-first approach; print every visited node’s value.
 
 ### BinarySearchTree
 
