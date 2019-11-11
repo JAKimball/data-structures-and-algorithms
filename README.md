@@ -34,6 +34,10 @@ Repo for code practice and challenges
 
 * #### [Multi-bracket Validation](code-challenges/multiBracketValidation/README.md)
 
+### Trees
+
+* #### [Find Maximum Value in a Binary Tree](code-challenges/data-structures/tree/README.md#Find-maximum-value-in-a-binary-tree)
+
 ---------------
 
 ## DSA/Challenge Submission Instruction
