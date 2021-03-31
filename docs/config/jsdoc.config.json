@@ -1,7 +1,9 @@
 {
   "source": {
-    "include": ["./code-challenges/data-structures/linkedList",
-      "./code-challenges/data-structures/stacksAndQueues"
+    "include": [
+      "./code-challenges/data-structures/linkedList",
+      "./code-challenges/data-structures/stacksAndQueues",
+      "./code-challenges/data-structures/tree"
     ]
   },
   "opts": {
