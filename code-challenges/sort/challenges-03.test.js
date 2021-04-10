@@ -108,7 +108,7 @@ const sortPeopleBetter = (arr) => arr.sort((a, b) => {
 });
 */
 
-const sortPeopleBetter = (arr) => arr.sort((a, b) => {
+const sortPeopleBetter = (arr) => arr.sort((a, b) =>
 
   // sort by lastName
   a.lastName > b.lastName ? 1
@@ -120,8 +120,7 @@ const sortPeopleBetter = (arr) => arr.sort((a, b) => {
 
           // then by age
           : a.age > b.age ? 1
-            : -1;
-});
+            : -1);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
